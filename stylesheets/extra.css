@@ -10,15 +10,22 @@
   margin-right: auto;
 }
 
-/* Hide left sidebar navigation */
-.md-sidebar--primary {
+/* Hide both sidebars */
+.md-sidebar--primary,
+.md-sidebar--secondary {
   display: none;
 }
 
-/* Center content when left sidebar is hidden */
+/* Center content when sidebars are hidden */
+.md-main__inner {
+  display: grid !important;
+  grid-template-columns: 1fr !important;
+  justify-items: center;
+}
+
 .md-content {
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 75%;
+  width: 100%;
 }
 
 /* Light grey background */
