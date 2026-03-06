@@ -3,14 +3,22 @@
   display: none;
 }
 
-/* Wider content area */
+/* Wider content area, centered */
 .md-grid {
   max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Hide left sidebar navigation */
 .md-sidebar--primary {
   display: none;
+}
+
+/* Center content when left sidebar is hidden */
+.md-content {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Light grey background */
@@ -22,66 +30,57 @@ body,
 
 /* Header bar */
 .md-header {
-  background-color: #2a2a2a;
+  background-color: #d0d0d0;
 }
 
-/* Faded green terminal-style text */
-.md-content {
-  color: #4a7a5b;
-}
-
+/* Dark grey body text */
 .md-typeset {
-  color: #4a7a5b;
+  color: #555555;
 }
 
+/* Headings - slightly darker grey */
 .md-typeset h1,
 .md-typeset h2,
 .md-typeset h3,
 .md-typeset h4,
 .md-typeset h5,
 .md-typeset h6 {
-  color: #2d5e3a;
+  color: #3a3a3a;
 }
 
 .md-typeset strong {
-  color: #2d5e3a;
+  color: #3a3a3a;
 }
 
-.md-typeset a {
-  color: #3d8b5e;
-}
+/* Links - keep blue/red from material theme defaults */
 
-.md-typeset a:hover {
-  color: #2d5e3a;
-}
-
-/* Code blocks - darker bg with green text */
+/* Code blocks - lighter grey bg than page */
 .md-typeset code,
 .md-typeset pre code {
-  color: #5faa7b;
-  background-color: #1e1e1e;
+  color: #555555;
+  background-color: #f0f0f0;
 }
 
 .md-typeset pre {
-  background-color: #1e1e1e;
+  background-color: #f0f0f0;
 }
 
 .highlight {
-  background-color: #1e1e1e !important;
+  background-color: #f0f0f0 !important;
 }
 
 /* Horizontal rules */
 .md-typeset hr {
-  border-color: #4a7a5b44;
+  border-color: #55555544;
 }
 
 /* List markers */
 .md-typeset ul li::marker,
 .md-typeset ol li::marker {
-  color: #4a7a5b;
+  color: #555555;
 }
 
 /* Footer */
 .md-footer {
-  background-color: #2a2a2a;
+  background-color: #d0d0d0;
 }
