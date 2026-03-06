@@ -1,0 +1,523 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://jIab-b.github.io/deep-sparse-attn/">
+      
+      
+        <link rel="prev" href="..">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.3">
+    
+    
+      
+        <title>Index - jIab-b</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="teal">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="jIab-b" class="md-header__button md-logo" aria-label="jIab-b" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            jIab-b
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Index
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="jIab-b" class="md-nav__button md-logo" aria-label="jIab-b" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    jIab-b
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Deep sparse attn
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Deep sparse attn
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Index
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>Index</h1>
+
+<p>brief overview of deep sparse attention, a sparse variant of deepseeks multi latent attention, also used in glm-5 (happy belated chinese new year !) to begin , we'll start with the dsa kernel input / output definitions.</p>
+<p><strong>dsa sparse index:</strong></p>
+<ul>
+<li>Inputs: <code>q_index_fp8 [batch_size, 64, 128]</code> (fp8), <code>k_index_cache_fp8 [num_pages, 64, 1, 132]</code> (fp8 + 1 fp32 scale), <code>weights [batch_size, 64]</code> (f32), <code>seq_len</code>, <code>block_table [B , max_pages]</code> (int32)</li>
+<li>Output: <code>topk_indices [batch_size, 2048]</code> int32</li>
+</ul>
+<p><strong>dsa sparse attention:</strong></p>
+<ul>
+<li>Inputs: <code>q_nope [T, 16, 512]</code>, <code>q_pe [T, 16, 64]</code>, paged ckv_cache / kpe_cache, <code>sparse_indices [T, 2048]</code>, <code>sm_scale</code></li>
+<li>Outputs: <code>output [T, 16, 512]</code> bf16, <code>lse [T, 16]</code> f32</li>
+</ul>
+<hr />
+<p>dsa is split into 2 phases, an index phase where we actually select the tokens that get staged for computation from the current sequence length, and a fixed dim main attention phase where we compute attention scores for all the topk index selected tokens. for the flash infer problem definition topk is selected as 2048 but i think it can be arbitrary. in real terms this would be all 2048 tokens in the chat history that are scored as being relevant to the next token generation. looking at the inputs for the index stage more closely, we have a query index of head size 64 and dim 128 that gets loaded once per decode, and a key cache of dim 132 (actual dim of they key value per token is 128 , the extra 4 bytes are a single fp32 scale we multiple each key value by). note the key cache is not stored by batch but has batches sharing a combined page table (block_table) that maps token batches to physical mem addresses, storing (batch_size (64), key_dim (128) in blocks, customary paged attention design. seq_len is self explanatory. from an inference perspective the main win of this design is that per token memory loads , which dominate in long contexts, are cut down to 132 fp8 vals. Regarding the actual design, my rough understanding is that q_index and k_index work something like a budget long context attention score computation,
+we store less encoded information (128 dims vs 512 = less information stored per each token), have more heads (64 vs 16 = more judging criterion for relevant tokens). also no positional encoding in this stage. relative to the k index, all the other loads are fairly trivial in size. from a compute perspective, we just loop over the ceiling of all 64 token length batches, multiply all per token key values by its scale factor, then the dominant calculation is our query * key matmul  <code>(head_dim (64), key_dim (128)) * (key_dim , seq_len)</code> reducing the key_dim across head_dim and seq_len. after this, we <code>relu(head_dim, seq_len)</code> (remove negative values), and then weight each heads importance <code>(head_dim , seq_len) * (weights, 1)</code> , and finally reduce the head dims ( <code>(head_dim, seq_len).sum(dim(0))</code> ), and then select final 2048 most relevant tokens (<code>topk((seq_len,1))</code>).</p>
+<p>regarding occupancy, we mostly want to partition an equal amount of key tiles among ctas, and fully saturate the gpus sms. for this we can just compute a static schedule in host,</p>
+<p>thinking from a Blackwell / B200 architecture perspective, the shapes align nicely with <code>tcgen05.mma.kind::f8f6f4</code> (using fp8). per the ptx isa (https://docs.nvidia.com/cuda/parallel-thread-execution/index.html#tcgen05-matrix-shape ), a batch of <code>(head_dim, key_dim)  (key_dim , batch_size)</code> , maps cleanly onto an mma with m , n = 64 and k = 32 , looping over K 4 times. per SM , a B200 has 512 cols of tmem, so for an mma that writes 64 tmem columns of output each stage, we can buffer up to 8 num stages. as we only need to load k each stage, this fits with tons of smem to spare. in code :</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">warp_id</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">kMmaWarp</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">elect_sync</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">local</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">local</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">num_my_tiles</span><span class="p">;</span><span class="w"> </span><span class="o">++</span><span class="n">local</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">        </span><span class="n">wait_mbars</span><span class="p">(</span><span class="n">tma_mbar</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="n">tmem_reuse_mbar</span><span class="p">);</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">valid_tokens</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">            </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">ki</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">ki</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">kMmaIters</span><span class="p">;</span><span class="w"> </span><span class="o">++</span><span class="n">ki</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">                </span><span class="n">tcgen05_mma_f8f6f4</span><span class="p">(</span><span class="n">tmem_d</span><span class="p">,</span><span class="w"> </span><span class="n">q_desc</span><span class="p">,</span><span class="w"> </span><span class="n">k_desc</span><span class="p">,</span><span class="w"> </span><span class="n">kIdesc</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="n">ki</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">0</span><span class="p">));</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">            </span><span class="p">}</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">            </span><span class="n">tcgen05_commit</span><span class="p">(</span><span class="n">addr</span><span class="p">.</span><span class="n">mma_mbar</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">stage</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">static_cast</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="p">(</span><span class="k">sizeof</span><span class="p">(</span><span class="kt">uint64_t</span><span class="p">)));</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">            </span><span class="n">mbarrier_arrive</span><span class="p">(</span><span class="n">addr</span><span class="p">.</span><span class="n">mma_mbar</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">stage</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">static_cast</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="p">(</span><span class="k">sizeof</span><span class="p">(</span><span class="kt">uint64_t</span><span class="p">)));</span>
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">        </span><span class="p">}</span>
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="p">}</span>
+</code></pre></div>
+<p>(this is simplifed pseudo-ish code with some stuff removed / combined for brevity)</p>
+<p>here we loop over all asigned tiles, wait for each tma stage to complete , and for tiles &gt;= num stages we also wait on the epilogue to be done reading tmem slots, and</p>
+<p>for data loading, query indices are small and all shares, we can load this once at the start</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">warp_id</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">kProducerWarp</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">elect_sync</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">    </span><span class="n">constexpr</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">q_bytes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">kNumHeads</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">kHeadDim</span><span class="p">;</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">    </span><span class="n">mbarrier_arrive_expect_tx</span><span class="p">(</span><span class="n">addr</span><span class="p">.</span><span class="n">q_mbar</span><span class="p">,</span><span class="w"> </span><span class="n">q_bytes</span><span class="p">);</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">    </span><span class="n">tma_3d_gmem2smem</span><span class="p">(</span><span class="n">addr</span><span class="p">.</span><span class="n">q_stage</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">q_fp8_tmap</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">b</span><span class="p">,</span><span class="w"> </span><span class="n">addr</span><span class="p">.</span><span class="n">q_mbar</span><span class="p">,</span><span class="w"> </span><span class="mi">0ULL</span><span class="p">);</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">    </span><span class="n">mbarrier_wait_parity</span><span class="p">(</span><span class="n">addr</span><span class="p">.</span><span class="n">q_mbar</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="p">}</span>
+</code></pre></div>
+<p>(note: we dont need to use tensor maps for this, it might be quicker just to direct load, i mostly TMA'd so that swizzle patterns match later k_ vectors , means we can reuse smem descriptors for mma)</p>
+<p>and the main key vectors we loop over , double buffered with the main MMA warp.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1">// ---------------- Producer warp ----------------</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">warp_id</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">kProducerWarp</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">elect_sync</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">local</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">local</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">num_my_tiles</span><span class="p">;</span><span class="w"> </span><span class="o">++</span><span class="n">local</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">        </span><span class="n">mbar_wait</span><span class="p">(</span><span class="n">add</span><span class="p">.</span><span class="n">epi_mbar</span><span class="p">)</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">        </span><span class="n">prepare_stage_metadata_and_scale_tail</span><span class="p">()</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">valid_tokens</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">            </span><span class="n">mbarrier_arrive_expect_tx</span><span class="p">(</span><span class="n">mbar</span><span class="p">,</span><span class="w"> </span><span class="n">payload_bytes</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">scale_bytes</span><span class="p">);</span>
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="w">            </span><span class="n">tma_3d_gmem2smem</span><span class="p">(</span><span class="n">payload_dst</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">k_fp8_tmap</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">page_idx</span><span class="p">,</span><span class="w"> </span><span class="n">mbar</span><span class="p">,</span><span class="w"> </span><span class="mi">0ULL</span><span class="p">);</span>
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="w">            </span><span class="n">tma_2d_gmem2smem</span><span class="p">(</span><span class="n">scale_dst</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">k_scale_tmap</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">page_idx</span><span class="p">,</span><span class="w"> </span><span class="n">mbar</span><span class="p">,</span><span class="w"> </span><span class="mi">0ULL</span><span class="p">);</span>
+<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="w">            </span><span class="n">mbarrier_arrive</span><span class="p">(</span><span class="n">addr</span><span class="p">.</span><span class="n">tma_mbar</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">stage</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">static_cast</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="p">(</span><span class="k">sizeof</span><span class="p">(</span><span class="kt">uint64_t</span><span class="p">)));</span>
+<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="w">        </span><span class="p">}</span>
+<a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a><span class="p">}</span>
+</code></pre></div>
+<p>per stage we have separate tensor maps and loads for both the main tokens and the scales</p>
+<p>the last major component of the first index phase is epilogue, which is loading results from tmem, appling a fused scale * relu * weight multiply to all the 64 x 64 (head , token) results of the mma. from a speed standpoint, this phase is by far the biggest bottleneck. per hardware rules (https://docs.nvidia.com/cuda/parallel-thread-execution/index.html#tcgen05-issue-granularity), each thread in a cta is limited to accessing only one lane of tmem memory, so we need a full waprgoup ( 4 ctas of cta % 0 - 3) for each ep stage, although we can just pack as many warpgroups as we can for each stage and assign sequential mma stages to a different warpgroup to hide latency. given the hard cap of 32 warps / cta , this gives us up to 7 epilogue warp groups / mma . this is a somewhat crude strat but does give notable speedups, although epi is still the bottleneck. regarding the actual logic , this is more involved than prior stages. as a starting point , on mma completion each  64 x 64 (head , token) is stored in tmem in a 128 x 64 layout, heads corresponding to lanes and tokens corresponding to columns. our final desired score is 64 token values, with the fused op applied and all head dims summed. note, only the first 16 threads of each warp actually getting useful head dim data in the ld op (https://docs.nvidia.com/cuda/parallel-thread-execution/index.html#tcgen05-data-path-layout-f). this maps directly onto <code>tcgen05.ld.ld.sync.aligned.16x64b.x32</code> instruction well (https://docs.nvidia.com/cuda/parallel-thread-execution/index.html#tcgen05-instructions-tcgen05-ld) (64 bit depth = 2 values so x32)  although this instruction caused issues with crashes / register pressure, instead we can just loop over mulitple chunks using smaller x16 or x8 variants. Testing either of these didnt show much difference, although smaller variants were worse.</p>
+<p>directly loading all 64 vals to a single thread crashes wtih reg overflow or somethign, although we can loop over with <code>.ld x32 x16</code> variants, testing between the 2 didnt show much difference , smaller variants performed worse (https://docs.nvidia.com/cuda/parallel-thread-execution/index.html#tcgen05-instructions-tcgen05-ld).</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="cp">#pragma unroll</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">ci</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">ci</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">kNumChunks</span><span class="p">;</span><span class="w"> </span><span class="o">++</span><span class="n">ci</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">tok_off</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ci</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">kChunk</span><span class="p">;</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">    </span><span class="kt">float</span><span class="w"> </span><span class="n">vals</span><span class="p">[</span><span class="n">kChunk</span><span class="p">];</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">    </span><span class="n">tcgen05_ld_16x64b_8</span><span class="p">(</span><span class="n">lane_base</span><span class="p">,</span><span class="w"> </span><span class="n">tmem_col_base</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">tok_off</span><span class="p">,</span><span class="w"> </span><span class="n">vals</span><span class="p">);</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">    </span><span class="n">tcgen05_wait_ld</span><span class="p">();</span>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">active_lane</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">        </span><span class="c1">// all compute and shuffle logic here</span>
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="p">}</span>
+</code></pre></div>
+<p>loading and applying the fused multiplication to these values :</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">active_lane</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">  </span><span class="c1">// active lan  &lt;= 16</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">    </span><span class="cp">#pragma unroll</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">t</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">t</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">kChunk</span><span class="p">;</span><span class="w"> </span><span class="o">++</span><span class="n">t</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">        </span><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">tok</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">tok_off</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">t</span><span class="p">;</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="w">        </span><span class="kt">float</span><span class="w"> </span><span class="n">v</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.0f</span><span class="p">;</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">tok</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">valid_tokens</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="w">            </span><span class="n">v</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">fmaxf</span><span class="p">(</span><span class="n">vals</span><span class="p">[</span><span class="n">t</span><span class="p">]</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">stage_scale</span><span class="p">[</span><span class="n">tok</span><span class="p">],</span><span class="w"> </span><span class="mf">0.0f</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">w</span><span class="p">;</span>
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="w">        </span><span class="p">}</span>
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="w">        </span><span class="n">vals</span><span class="p">[</span><span class="n">t</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">v</span><span class="p">;</span>
+<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="w">    </span><span class="p">}</span>
+</code></pre></div>
+<p>now each warp stores 16 heads x 16 tokens , we can compute the final token value first by warp shuffling the 16 heads across all 4 warp groups, and then storing the intermediate final sum in a (64 , 4) smem buffer</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="cp">#pragma unroll</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">off</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">8</span><span class="p">;</span><span class="w"> </span><span class="n">off</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">off</span><span class="w"> </span><span class="o">&gt;&gt;=</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">    </span><span class="cp">#pragma unroll</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">t</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">t</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">kChunk</span><span class="p">;</span><span class="w"> </span><span class="o">++</span><span class="n">t</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="w">        </span><span class="n">vals</span><span class="p">[</span><span class="n">t</span><span class="p">]</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">__shfl_down_sync</span><span class="p">(</span><span class="mh">0x0000FFFF</span><span class="p">,</span><span class="w"> </span><span class="n">vals</span><span class="p">[</span><span class="n">t</span><span class="p">],</span><span class="w"> </span><span class="n">off</span><span class="p">,</span><span class="w"> </span><span class="mi">16</span><span class="p">);</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="p">}</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">lane16</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">  </span><span class="c1">// only single thread holds vals after warp shuffle</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">    </span><span class="cp">#pragma unroll</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">t</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">t</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">kChunk</span><span class="p">;</span><span class="w"> </span><span class="o">++</span><span class="n">t</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">        </span><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">tok</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">tok_off</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">t</span><span class="p">;</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">tok</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">valid_tokens</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="w">            </span><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">part_idx</span><span class="w"> </span><span class="o">=</span>
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="w">                </span><span class="p">((</span><span class="n">stage</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">kNumEpSlots</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">ep_slot</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">kStageTokens</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">tok</span><span class="p">;</span>
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="w">            </span><span class="n">s</span><span class="p">.</span><span class="n">stage_tile_raw</span><span class="p">[</span><span class="n">part_idx</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">vals</span><span class="p">[</span><span class="n">t</span><span class="p">];</span>
+<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="w">        </span><span class="p">}</span>
+<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="p">}</span>
+</code></pre></div>
+<p>and the final result is us storing this result to global, and signalling mbar completion so we can reuse tmem cols / smem staging area. There's probably some notable savings to be made in epilogue, I made some attempts at using tcgen05. 16x64 , which avoids redundant loads, and would allow us to cut down num stages for the same reg pressure, but had awkward warp shuffle semantics and doesn't seem to yield major speedups. There's also maybe an opportunity to fold some of the loops, altogether we have 3 loops inside the main token chunk loop, as well as some other optimizations.</p>
+<hr />
+<p>lastly, we need to find the 2048 highest scoring values from those we computed. while tesing i just computed <code>torch.topk()</code> over the results, which worked for correctness but was somewhat slow. final result is to just vibe code a new cublas radix histogram kernel, and graph capture it with the prior kernel, which at lest gave 50% ~ is speedup over using torch eager. I'm not completely sure how this works, but the basic idea is launch a cta for every batch we receive, and progressively stream in all the computed values for this batch into smem buffers, find the smallest value from the current buffer + existing topk vals by decomposing all our existing vals into buckets based on the values leading bits until we find the smallest value from the current list that meets our topk threshold (2048 in our case) , then another phase , again per smem tile, where we sort and keep all values &gt;= this , then another after we have soft-sorted all tiles that hard sorts the values in descending order.</p>
+<p>Again, definite speedups here, first by just fusing the kernel with the main index kernel , we could keep per batch sort by having the first (batch_len) ctas of the index kernel, after their final epilogue, wait on a global atomic that all ctas write to on completion, and then computing radix sort here. this would at least allow us to l2 evict last hint all the output values / indices we write in the prior phase. for large seq_len, with each tile handling well over 2048 tokens, its also possible we could overlap a pre topk in the index kernel with the other pipelined tma / mma / epi stages and write the indices of only the best 2048 tokens we compute to a buffer that our main batch cta reads, which if it didn't stall the rest of the pipeline would get rid of a lot of topk work for the final sort. i did some testing on this, early results is it seems hard for it to keep speed unless we pump number of threads, which also slows epilogue.</p>
+<p>computing against the pytorch ref, we get a few swapped indice values in the topk , because of the way the torch ref upscales the values to fp32 and multiples the head weight over all 128 key dim prior to the main mma. this is mathematically equivalent, but has some small diffs because of fp accumulation or something, anyway the actual topk values we produce are the same , we just have a few positional differences, so i decided to just ignore it for now. final speedup ranges from 2.5 - 15 x over the pytorch reference and about 2-3 x over a torch version i made that doesn't pointlessly split the final loop into batches. considering we have fp8 vs fp32 data movement and fp8 Blackwell tensor cores, this is rather depressingly small for now, and points to what i said about epilogue / topk being the main bottleneck.</p>
+<hr />
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
