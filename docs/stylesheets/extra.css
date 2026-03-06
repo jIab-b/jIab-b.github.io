@@ -3,9 +3,11 @@
   display: none;
 }
 
-/* Wider content area */
+/* Wider content area, centered */
 .md-grid {
   max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Hide left sidebar navigation */
@@ -13,8 +15,72 @@
   display: none;
 }
 
+/* Center content when left sidebar is hidden */
+.md-content {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* Light grey background */
 body,
-.md-main {
-  background-color: #f5f5f5;
+.md-main,
+.md-content {
+  background-color: #e8e8e8;
+}
+
+/* Header bar */
+.md-header {
+  background-color: #d0d0d0;
+}
+
+/* Dark grey body text */
+.md-typeset {
+  color: #555555;
+}
+
+/* Headings - slightly darker grey */
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4,
+.md-typeset h5,
+.md-typeset h6 {
+  color: #3a3a3a;
+}
+
+.md-typeset strong {
+  color: #3a3a3a;
+}
+
+/* Links - keep blue/red from material theme defaults */
+
+/* Code blocks - lighter grey bg than page */
+.md-typeset code,
+.md-typeset pre code {
+  color: #555555;
+  background-color: #f0f0f0;
+}
+
+.md-typeset pre {
+  background-color: #f0f0f0;
+}
+
+.highlight {
+  background-color: #f0f0f0 !important;
+}
+
+/* Horizontal rules */
+.md-typeset hr {
+  border-color: #55555544;
+}
+
+/* List markers */
+.md-typeset ul li::marker,
+.md-typeset ol li::marker {
+  color: #555555;
+}
+
+/* Footer */
+.md-footer {
+  background-color: #d0d0d0;
 }
