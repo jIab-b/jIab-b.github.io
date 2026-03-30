@@ -373,6 +373,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    res
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -389,6 +407,36 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#happy-to-talk-more-details-about-kernel-design-my-general-approach-to-optimizing-also-tinkered-about-training-loras-locally-peft-qwen3-interested-in-anything-to-do-with-training-multi-gpu-stuff" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Happy to talk more details about kernel design / my general approach to optimizing. also tinkered about training loras locally (peft + qwen3) , + interested in anything to do with training / multi gpu stuff.
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -422,6 +470,25 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#happy-to-talk-more-details-about-kernel-design-my-general-approach-to-optimizing-also-tinkered-about-training-loras-locally-peft-qwen3-interested-in-anything-to-do-with-training-multi-gpu-stuff" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Happy to talk more details about kernel design / my general approach to optimizing. also tinkered about training loras locally (peft + qwen3) , + interested in anything to do with training / multi gpu stuff.
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -440,19 +507,8 @@
 <h1 id="res">res</h1>
 <p>hello world</p>
 <hr />
-<p>coral reefs are underwater structures built by colonies of tiny animals called coral polyps. they support roughly 25% of all marine species despite covering less than 1% of the ocean floor. most reefs grow in warm, shallow, clear water where sunlight can reach the photosynthetic algae living inside coral tissues.</p>
-<p><strong>reef zones:</strong></p>
-<ul>
-<li>back reef: shallow, calm, sheltered side closest to shore</li>
-<li>reef crest: highest point, takes the brunt of wave energy</li>
-<li>fore reef: slopes down into deeper water, highest biodiversity</li>
-</ul>
-<hr />
-<p>the main threat to reefs right now is ocean warming. when water temps stay elevated for too long, corals expel their symbiotic algae (bleaching), and if conditions don't recover they starve. mass bleaching events have become significantly more frequent since the late 90s.</p>
-<p>other pressures include ocean acidification (lower pH = harder for corals to build calcium carbonate skeletons), agricultural runoff causing algal blooms that smother reefs, and overfishing removing species that keep algae in check.</p>
-<hr />
-<p>some restoration approaches: coral gardening (fragmenting healthy corals onto underwater nursery trees, then transplanting), assisted gene flow (crossing heat-tolerant strains with local populations), and artificial reef structures that give larvae something to settle on. none of these scale to the size of the problem yet but results from smaller projects have been promising.</p>
-<hr />
+<p>Previously written sparse mla on Blackwell ( the prefill index phase , as well as topk kernel, writeup here Blackwell / https://jiab-b.github.io/deep-sparse-index/ ), had decent perf on 2 nvfp4 competitions ( dual gemm and grouped gemm, here https://www.gpumode.com/leaderboard/697?tab=rankings)  , as well as regular mla and sparse mixture of experts on amd. also an example side project, somewhat messy state right now, that attempts to virtually simulate the state of the gpu and have an agent deconstruct input kernels into an ir, here https://github.com/jIab-b/mlsys/blob/master/graph/  </p>
+<h2 id="happy-to-talk-more-details-about-kernel-design-my-general-approach-to-optimizing-also-tinkered-about-training-loras-locally-peft-qwen3-interested-in-anything-to-do-with-training-multi-gpu-stuff">Happy to talk more details about kernel design / my general approach to optimizing. also tinkered about training loras locally (peft + qwen3) , + interested in anything to do with training / multi gpu stuff.</h2>
 
 
 
