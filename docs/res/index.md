@@ -4,22 +4,8 @@ hello world
 
 ---
 
-coral reefs are underwater structures built by colonies of tiny animals called coral polyps. they support roughly 25% of all marine species despite covering less than 1% of the ocean floor. most reefs grow in warm, shallow, clear water where sunlight can reach the photosynthetic algae living inside coral tissues.
+Previously written sparse mla on Blackwell ( the prefill index phase , as well as topk kernel, writeup here Blackwell / https://jiab-b.github.io/deep-sparse-index/ ), had decent perf on 2 nvfp4 competitions ( dual gemm and grouped gemm, here https://www.gpumode.com/leaderboard/697?tab=rankings)  , as well as regular mla and sparse mixture of experts on amd. also an example side project, somewhat messy state right now, that attempts to virtually simulate the state of the gpu and have an agent deconstruct input kernels into an ir, here https://github.com/jIab-b/mlsys/blob/master/graph/  
 
-**reef zones:**
-
-- back reef: shallow, calm, sheltered side closest to shore
-- reef crest: highest point, takes the brunt of wave energy
-- fore reef: slopes down into deeper water, highest biodiversity
-
+Happy to talk more details about kernel design / my general approach to optimizing. also tinkered about training loras locally (peft + qwen3) , + interested in anything to do with training / multi gpu stuff.
 ---
 
-the main threat to reefs right now is ocean warming. when water temps stay elevated for too long, corals expel their symbiotic algae (bleaching), and if conditions don't recover they starve. mass bleaching events have become significantly more frequent since the late 90s.
-
-other pressures include ocean acidification (lower pH = harder for corals to build calcium carbonate skeletons), agricultural runoff causing algal blooms that smother reefs, and overfishing removing species that keep algae in check.
-
----
-
-some restoration approaches: coral gardening (fragmenting healthy corals onto underwater nursery trees, then transplanting), assisted gene flow (crossing heat-tolerant strains with local populations), and artificial reef structures that give larvae something to settle on. none of these scale to the size of the problem yet but results from smaller projects have been promising.
-
----
